@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MoviesService, Movie } from 'src/app/services/movies.service';
 
+
 @Component({
   //fonctionne comme des selecteurs css
   selector: '.premierComposant',
@@ -14,6 +15,7 @@ export class MonPremierComposantComponent {
  constructor(private moviesService : MoviesService){
   this.movies = this.moviesService.getAllMovies();
  }
+
 
  
 
